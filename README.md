@@ -1,22 +1,12 @@
-# UpRun
+# Up & Running with Elixir & Phoenix
 
-**TODO: Add description**
+![](https://github.com/robot-overlord/up_run/blob/master/priv/logo.png?raw=true)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `up_run` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:up_run, "~> 0.1.0"}]
-end
+```shell
+> mix deps.get
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/up_run](https://hexdocs.pm/up_run).
-
 
 ## Quickdraw Demo Setup
 

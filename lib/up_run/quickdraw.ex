@@ -12,6 +12,25 @@ defmodule UpRun.Quickdraw do
 
   use GenServer
 
+  # ==========# #
+  # Convenience #
+  # ==========# #
+
+  defmacro __using__(player: name) do
+    quote do
+      require Logger
+      import UpRun.Quickdraw
+      name =
+        case unquote(name) do
+          stringy when is_bitstring(stringy) -> String.to_atom(stringy)
+          atomic when is_atom(atomic) -> atomic
+        end
+
+      {:ok, _} = unquote(__MODULE__).spawn(name)
+      Logger.info ~s(Your player address is: {:#{name}, :"#{Node.self()}"})
+    end
+  end
+
   # ========== #
   # Client API #
   # ========== #
@@ -43,6 +62,8 @@ defmodule UpRun.Quickdraw do
   end
 
   def scoreboard(pid), do: GenServer.call(pid, :get_score)
+
+  def ready?(pid), do: GenServer.call(pid, :alive?)
 
   # ========== #
   # Server API #

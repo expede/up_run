@@ -8,7 +8,7 @@
 > mix deps.get
 ```
 
-## Quickdraw Demo Setup
+## How to play the Quickdraw demo
 
 ```elixir
 # You need to use your own address. 10.1.10.42 probably won't work for you.

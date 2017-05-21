@@ -2,7 +2,7 @@ defmodule UpRun.Quickdraw do
   @moduledoc ~S"""
   Game instructions:
 
-  1. `iex --sname your_name --cookie LambdaConf`
+  1. `iex --sname your_name --cookie monster -S mix`
   2. `alias UpRun.Quickdraw, as: QD`
   3. `{:ok, me} = QD.spawn(:john_wayne)`
   4. `target = {:clint_eastwood, "machine_address"}`

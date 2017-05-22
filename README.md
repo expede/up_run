@@ -34,7 +34,7 @@ iex(shootout2@10.1.10.42)4> me |> fire(target)
 # :ok
 # 🎉 Nice shot! (Or maybe you get hit instead)
 
-iex(shootout2@10.1.10.42)5> alive? me
+iex(shootout2@10.1.10.42)5> ready? me
 # true (or maybe false)
 
 iex(shootout2@10.1.10.42)6> scoreboard me

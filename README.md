@@ -12,6 +12,7 @@
 
 ```elixir
 # You need to use your own address. 10.1.10.42 probably won't work for you.
+# You can use `ipconfig getifaddr en0` to find your local address
 #                     vvvvvvvvvv
 > iex --name shootout@10.1.10.42 --cookie monster -S mix
 # Erlang/OTP 19 [erts-8.3] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]

@@ -22,7 +22,7 @@ iex(shootout@10.1.10.42)1> use UpRun.Quickdraw, player: :dolores
 # 11:10:02.107 [info]  Your player address is: {:dolores, :"shootout@10.1.10.42"}
 # :ok
 
-iex(shootout@10.1.10.42)2> me = {:dolores, :shootout@10.1.10.42}
+iex(shootout@10.1.10.42)2> me = {:dolores, :"shootout@10.1.10.42"}
 # 11:40:23.405 [info]  Your player address is: {:dolores, :"shootout@10.1.10.42"}
 
 iex(shootout@10.1.10.42)3> target = {:ford, :"shootout@10.1.10.13"}
